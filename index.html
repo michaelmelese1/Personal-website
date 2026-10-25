@@ -1,53 +1,179 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-  <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael | Portfolio</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-  <header>
-      <nav class="navbar">
-            <div class="logo"><span class="m-white">M</span><span class="m-blue">M</span></div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-  </header>
-  <main>
-    <section class="hero">
-      <div class="hero-text">
-        <p id="hi">––––hi i'm</p>
-        <h2 class="name">Michael 👋</h2>
-        <p id="note">A student, problem Solver and Aspiring Software developer who enjoys building simple things, learning new technologies, and turning ideas into real projects!</p>
-        <a class="btn1" href="about.html">More About me</a>
+    <header class="navbar">
+        <a href="#home" class="logo">M<span>M</span></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-text">
+                <p class="eyebrow">— HI, I'M</p>
+                <h1>Michael <span>👋</span></h1>
 
-        <div class="contacts">
-            <p class="connect">Lets connect––––</p>
-            <h2 class="question">Have a Project in Mind?</h2>
-            <p class="text">I'm always open for new opportunities, collaborations, and interesting projects. Feel free to reach out –– I'd love to hear from you.</p>
-             <a class="btn2" href="contact.html">Contact Me</a>
-        </div>
-        <div class="social-links">
-          <a href="https://github.com/michaelmelese1" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <img id="github" src="images/icons8-github-32.png" alt="">
-          </a>
-          <a href="https://www.linkedin.com/in/michael-melese-122219375/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <img id="linkedin" src="images/icons8-linkedin-48.png" alt="">
-          </a>
-          <a href="https://leetcode.com/u/michaelmelese/" target="_blank" rel="noopener noreferrer" aria-label="LeetCode">
-            <img id="leetcode" src="images/leetcode.png" alt="">
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-      <p>Michael Melese 2026/19</p>
-      <p>© All rights reserved</p>
-  </footer>  
+                <p class="intro">
+                    A student, problem solver, and aspiring software
+                    developer who enjoys building simple things,
+                    learning new technologies, and turning ideas
+                    into real projects!
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#projects" class="button button-blue">
+                        View My Work →
+                    </a>
+
+                    <a href="about.html" class="button button-outline">
+                        More About Me
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-image"></div>
+        </section>
+
+
+        <section class="skills section">
+            <div>
+                <p class="eyebrow">— MY SKILLS</p>
+                <h2>My skils</h2>
+                <p>I'm currently learning and building with these
+                   programs and tools.</p>
+            </div>
+
+            <div class="skill-list">
+                <div class="skill">🟧 HTML</div>
+                <div class="skill">🟦 CSS</div>
+                <div class="skill">🟨 JavaScript</div>
+                <div class="skill">🐍 Python</div>
+                <div class="skill">🐙 Git &amp; GitHub</div>
+                <div class="skill">💻 VS Code</div>
+            </div>
+        </section>
+        
+        <section class="projects section" id="projects">
+            <div class="projects-heading">
+                <div>
+                    <p class="eyebrow">— FEATURED PROJECTS</p>
+                    <h2>Some Things I've Built</h2>
+                    <p>Here are a few projects I've worked on.
+                       Check them out!</p>
+                </div>
+            </div>
+
+            <div class="project-grid">
+
+                <article class="project-card">
+                    <div class="project-preview preview-store">
+                        <span class="preview-logo">NM</span>
+                        <div>
+                            <h3>NM Electronics</h3>
+                            <p>A simple online store</p>
+                        </div>
+                        <img class="preview-emoji project-logo" src="images/logo.jpeg" alt="NM Electronics logo">
+                    </div>
+
+                    <div class="project-info">
+                        <h3>NM Electronics</h3>
+                        <p>An online electronics store website built
+                           with HTML, CSS and JavaScript.</p>
+
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a href="https://n-melectronics.vercel.app/" class="text-link">View Project →</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-preview preview-portfolio">
+                        <span class="preview-logo">MM</span>
+                        <div>
+                            <h3>My Portfolio</h3>
+                            <p>Simple. Clean. Professional.</p>
+                        </div>
+                        <span class="preview-emoji">⌨️</span>
+                    </div>
+
+                    <div class="project-info">
+                        <h3>Personal Portfolio</h3>
+                        <p>My personal website to showcase my skills
+                           and future goals.</p>
+
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                        <a href="#" class="text-link">View Project →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="about-panel section" id="about">
+            <div class="about-part">
+                <p class="eyebrow">CURRENTLY LEARNING</p>
+                <h2>Building My Skills</h2>
+
+                <p>
+                    I love web and softwere development, problem-solving, and
+                    creating useful things with programing.
+                </p>
+
+                <div class="tags">
+                    <span>Web Development</span>
+                    <span>Problem Solving</span>
+                    <span>Tech</span>
+                    <span>Math</span>
+                </div>
+            </div>
+
+            <div class="goals-part">
+                <p class="eyebrow">⚡ MY GOALS</p>
+
+                <ul>
+                    <li>Get better at web development</li>
+                    <li>Build more real projects</li>
+                    <li>Grow my problem-solving skills</li>
+                    <li>Make a positive impact with technology</li>
+                </ul>
+            </div>
+        </section>
+        <section class="contact section" id="contact">
+            <p class="eyebrow">LET'S CONNECT</p>
+            <h2>Have a Project in Mind?</h2>
+
+            <p>
+                I'm always open to new opportunities, collaborations,
+                and interesting projects. Feel free to reach out —
+                I'd love to hear from you.
+            </p>
+
+            <a href="contact.html"
+               class="button button-blue">
+                ✉ Contact Me
+            </a>
+        </section>
+    </main>
+    <footer>
+       <p>Michael Melese 2026/19</p>
+       <p>© All rights reserved</p>
+    </footer>
 </body>
 </html>
